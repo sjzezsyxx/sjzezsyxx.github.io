@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap justify-between">
         <div v-for="slogan in slogans" :key="slogan.name">
-            <figure class="shadow-lg rounded-xl flex-none w-64 md:w-xl m-2">
+            <figure class="shadow-lg rounded-xl flex-none w-72 md:w-xl m-2">
                 <blockquote
                     class="
                         rounded-t-xl
