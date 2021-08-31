@@ -16,7 +16,7 @@
             mb-2
         "
     >
-        <a href="/" class="flex-none pl-4 sm:pl-6 xl:pl-8 flex items-center lg:border-b-0 text-lg font-bold">
+        <a href="/" class="flex-none pl-4 flex items-center lg:border-b-0 text-lg font-bold">
             {{ title }}
         </a>
         <div class="flex-auto h-18 flex items-center justify-between px-4 sm:px-6 lg:mx-6 lg:px-0 xl:mx-8">
