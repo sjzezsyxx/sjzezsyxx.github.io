@@ -94,6 +94,12 @@ const slogans = [
         avatar: 'https://i.loli.net/2021/08/31/mRjfMirAvxtXE2Q.jpg',
         slogan: '纵使世界万般残酷，总有温暖值得守护。',
     },
+    {
+        name: 'non_fried_chips',
+        grade: 2020,
+        avatar: 'https://gravatar.loli.net/avatar/3a0ef19aebf369316d445ff5334e9d6c?s=144',
+        slogan: '所有梦想终将怒放。',
+    },
 ].map((slogan, index) => {
     slogan.color = colors[Object.keys(colors)[index % Object.keys(colors).length]];
     return slogan;
