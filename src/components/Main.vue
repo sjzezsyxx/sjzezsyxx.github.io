@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-wrap justify-between">
+    <div class="slogans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <div v-for="slogan in slogans" :key="slogan.name">
             <figure class="shadow-lg rounded-xl flex-none w-72 md:w-xl m-2">
                 <blockquote
@@ -93,3 +93,19 @@ const slogans = [
     return slogan;
 });
 </script>
+
+<style scoped>
+/* 
+`grid-template-rows: masonry` is a new feature and has not been widely
+supported by mainstream browsers, so use @supports to ensure compatibility.
+
+See:
+  * https://drafts.csswg.org/css-grid-3/#masonry-layout
+  * https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows
+*/
+@supports (grid-template-rows: masonry) {
+    .slogans {
+        grid-template-rows: masonry;
+    }
+}
+</style>
