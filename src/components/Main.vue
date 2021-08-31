@@ -82,6 +82,12 @@ const slogans = [
         avatar: 'https://gravatar.loli.net/avatar/2df35c7d897d344d3889ffc8290bb1cd?d=mm&s=144',
         slogan: '星空在前，路在脚下。',
     },
+    {
+        name: 'RenaMoe',
+        grade: 2020,
+        avatar: 'https://gravatar.loli.net/avatar/af4f417cc9c743bec7c0b06c94fe1f71?d=mm&s=144',
+        slogan: '以必将褪色的誓言，守护无法实现的愿望。',
+    },
 ].map((slogan, index) => {
     slogan.color = colors[Object.keys(colors)[index % Object.keys(colors).length]];
     return slogan;
