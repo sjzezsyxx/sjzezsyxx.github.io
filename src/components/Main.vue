@@ -1,7 +1,7 @@
 <template>
     <div class="slogans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        <div v-for="slogan in slogans" :key="slogan.name">
-            <figure class="shadow-lg rounded-xl flex-none w-72 md:w-xl m-2">
+        <div v-for="slogan in slogans" :key="slogan.name" class="p-2">
+            <figure class="shadow-lg rounded-xl flex-none w-full">
                 <blockquote
                     class="
                         rounded-t-xl
