@@ -62,5 +62,11 @@ const slogans = [
         avatar: 'https://cdn.jsdelivr.net/npm/bsi@0.0.4/avatar/144x144.png',
         slogan: '学习，就是发现自己越来越菜的过程。',
     },
+    {
+        name: 'LawrenceSivan',
+        grade: 2020,
+        avatar: 'https://gravatar.loli.net/avatar/6b39805028574604c8349b18dcdb8a9f?d=mm&s=144',
+        slogan: 'I was so much older then, I′m younger than that now.',
+    },
 ];
 </script>
