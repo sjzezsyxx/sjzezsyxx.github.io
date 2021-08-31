@@ -35,7 +35,7 @@
                     <div class="flex-auto">
                         {{ slogan.name }}
                         <br />
-                        <span :class="`${slogan.color[0]}`">{{ slogan.grade }} 级</span>
+                        <span :class="`${slogan.color[1]}`">{{ slogan.grade }} 级</span>
                     </div>
                     <div class="flex" v-if="slogan.site">
                         <a :href="slogan.site" class="opacity-50 hover:opacity-75 transition-opacity duration-200">
@@ -72,7 +72,7 @@ const colors = {
     violet: [gradients.violet[0], 'text-purple-100', 'bg-purple-100'],
     amber: [gradients.amber[0], 'text-orange-100', 'bg-orange-100'],
     pink: [gradients.pink[0], 'text-rose-100', 'bg-rose-100'],
-    blue: [gradients.blue[0], 'text-light-blue-100', 'bg-light-blue-100'],
+    blue: [gradients.blue[0], 'text-sky-100', 'bg-sky-100'],
 };
 
 const slogans = [
