@@ -25,28 +25,17 @@
                     <p>{{ slogan.slogan }}</p>
                 </blockquote>
                 <figcaption
-                    class="
-                        flex
-                        items-center
-                        space-x-4
-                        p-6
-                        md:px-10 md:py-6
-                        bg-gradient-to-br
-                        rounded-b-xl
-                        leading-6
-                        font-semibold
-                        text-white
-                        from-purple-500
-                        to-indigo-500
-                    "
+                    :class="`flex items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-b-xl leading-6 font-semibold text-white ${slogan.color[0]}`"
                 >
-                    <div class="flex-none w-14 h-14 bg-white rounded-full flex items-center justify-center">
+                    <div
+                        :class="`flex-none w-14 h-14 bg-white rounded-full flex items-center justify-center ${slogan.color[2]}`"
+                    >
                         <img :src="slogan.avatar" alt="" class="w-12 h-12 rounded-full" loading="lazy" />
                     </div>
                     <div class="flex-auto">
                         {{ slogan.name }}
                         <br />
-                        <span class="text-grey-300">{{ slogan.grade }} 级</span>
+                        <span :class="`${slogan.color[0]}`">{{ slogan.grade }} 级</span>
                     </div>
                 </figcaption>
             </figure>
@@ -55,6 +44,19 @@
 </template>
 
 <script setup>
+import { gradients } from '../utils/gradients';
+
+const colors = {
+    lightblue: [gradients.lightblue[0], 'text-cyan-100', 'bg-cyan-100'],
+    purple: [gradients.purple[0], 'text-fuchsia-100', 'bg-fuchsia-100'],
+    orange: [gradients.orange[0], 'text-orange-100', 'bg-orange-100'],
+    teal: [gradients.teal[0], 'text-green-100', 'bg-green-100'],
+    violet: [gradients.violet[0], 'text-purple-100', 'bg-purple-100'],
+    amber: [gradients.amber[0], 'text-orange-100', 'bg-orange-100'],
+    pink: [gradients.pink[0], 'text-rose-100', 'bg-rose-100'],
+    blue: [gradients.blue[0], 'text-light-blue-100', 'bg-light-blue-100'],
+};
+
 const slogans = [
     {
         name: '宝硕',
@@ -80,5 +82,8 @@ const slogans = [
         avatar: 'https://gravatar.loli.net/avatar/2df35c7d897d344d3889ffc8290bb1cd?d=mm&s=144',
         slogan: '星空在前，路在脚下。',
     },
-];
+].map((slogan, index) => {
+    slogan.color = colors[Object.keys(colors)[index % Object.keys(colors).length]];
+    return slogan;
+});
 </script>
