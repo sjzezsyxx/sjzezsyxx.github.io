@@ -81,12 +81,14 @@ const slogans = [
         grade: 2021,
         avatar: 'https://cdn.jsdelivr.net/npm/bsi@0.0.4/avatar/144x144.png',
         slogan: '学习，就是发现自己越来越菜的过程。',
+        site: 'https://baoshuo.ren',
     },
     {
         name: 'LawrenceSivan',
         grade: 2020,
         avatar: 'https://gravatar.loli.net/avatar/6b39805028574604c8349b18dcdb8a9f?d=mm&s=144',
         slogan: 'I was so much older then, I′m younger than that now.',
+        site: 'https://lawrencesivan.github.io',
     },
     {
         name: 'youwike',
@@ -99,12 +101,14 @@ const slogans = [
         grade: 2020,
         avatar: 'https://gravatar.loli.net/avatar/2df35c7d897d344d3889ffc8290bb1cd?d=mm&s=144',
         slogan: '星空在前，路在脚下。',
+        site: 'https://xyy1411.github.io',
     },
     {
         name: 'RenaMoe',
         grade: 2020,
         avatar: 'https://gravatar.loli.net/avatar/af4f417cc9c743bec7c0b06c94fe1f71?d=mm&s=144',
         slogan: '以必将褪色的誓言，守护无法实现的愿望。',
+        site: 'https://renamoe.gitee.io',
     },
     {
         name: 'CloudySky',
@@ -117,12 +121,14 @@ const slogans = [
         grade: 2020,
         avatar: 'https://gravatar.loli.net/avatar/3a0ef19aebf369316d445ff5334e9d6c?s=144',
         slogan: '所有梦想终将怒放。',
+        site: 'https://nonfriedchips.github.io',
     },
     {
         name: 'SGColin',
         grade: 2017,
         avatar: 'https://gravatar.loli.net/avatar/2caaf8193e57d2f3f9c657ca244df330?s=144',
         slogan: 'God helps those who help themselves.',
+        site: 'http://blog.gyx.me',
     },
 ].map((slogan, index) => {
     slogan.color = colors[Object.keys(colors)[index % Object.keys(colors).length]];
