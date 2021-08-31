@@ -68,5 +68,11 @@ const slogans = [
         avatar: 'https://gravatar.loli.net/avatar/6b39805028574604c8349b18dcdb8a9f?d=mm&s=144',
         slogan: 'I was so much older then, I′m younger than that now.',
     },
+    {
+        name: 'youwike',
+        grade: 2021,
+        avatar: 'https://i.loli.net/2021/08/28/9SUsgA1u6Kj73r5.jpg',
+        slogan: '我将会骄傲的说，这世界我来过。',
+    },
 ];
 </script>
