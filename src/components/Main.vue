@@ -74,5 +74,11 @@ const slogans = [
         avatar: 'https://i.loli.net/2021/08/28/9SUsgA1u6Kj73r5.jpg',
         slogan: '我将会骄傲的说，这世界我来过。',
     },
+    {
+        name: 'XYY1411',
+        grade: 2020,
+        avatar: 'https://gravatar.loli.net/avatar/2df35c7d897d344d3889ffc8290bb1cd?d=mm&s=144',
+        slogan: '星空在前，路在脚下。',
+    },
 ];
 </script>
