@@ -145,6 +145,13 @@ const slogans = [
         slogan: 'Life is a game, and the game is a life.',
         site: 'https://rsdbkhusky.github.io/',
     },
+    {
+        name: 'CG__HeavenHealer',
+        grade: 2020,
+        avatar: 'https://i.loli.net/2021/09/01/3uvLtCZVdi9aY7y.png',
+        slogan: '年月把拥有变作失去，疲倦的双眼带着期望。',
+        site: 'https://cgheavenhealer.github.io/',
+    },
 ].map((slogan, index) => {
     slogan.color = colors[Object.keys(colors)[index % Object.keys(colors).length]];
     return slogan;
