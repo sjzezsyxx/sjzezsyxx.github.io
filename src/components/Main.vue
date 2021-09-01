@@ -138,6 +138,13 @@ const slogans = [
         slogan: 'Inner peace.',
         site: 'https://www.cnblogs.com/Liang-sheng/',
     },
+    {
+        name: 'Rsdbkhusky',
+        grade: 2020,
+        avatar: 'https://i.loli.net/2021/09/01/qt4FWld7SkAVrQU.png',
+        slogan: 'Life is a game, and the game is a life.',
+        site: 'https://rsdbkhusky.github.io/',
+    },
 ].map((slogan, index) => {
     slogan.color = colors[Object.keys(colors)[index % Object.keys(colors).length]];
     return slogan;
