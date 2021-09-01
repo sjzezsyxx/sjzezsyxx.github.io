@@ -1,10 +1,10 @@
 <template>
-    <header class="sticky top-0 z-40 lg:z-50 w-full mx-auto bg-white px-10 sm:px-20 py-5 border-b border-gray-200 mb-2">
+    <header class="sticky top-0 z-40 lg:z-50 w-full mx-auto bg-white px-5 xl:px-0 py-5 border-b border-gray-200 mb-2">
         <div class="flex-none flex-wrap flex mx-auto max-w-screen-xl">
-            <a href="/" class="flex-none pl-4 flex items-center lg:border-b-0 text-lg font-bold">
+            <a href="/" class="flex-none flex items-center lg:border-b-0 text-lg font-bold">
                 {{ title }}
             </a>
-            <div class="flex-auto h-18 flex items-center justify-between px-4 sm:px-6 lg:mx-6 lg:px-0 xl:mx-8">
+            <div class="flex-auto h-18 flex items-center justify-between lg:mx-6 lg:px-0 xl:mx-8">
                 <div class="flex items-center space-x-6"></div>
                 <div>
                     <a
