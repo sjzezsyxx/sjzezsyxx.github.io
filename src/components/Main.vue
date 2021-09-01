@@ -141,7 +141,7 @@ const slogans = [
     {
         name: 'Rsdbkhusky',
         grade: 2020,
-        avatar: 'https://figurebed-1306986731.file.myqcloud.com/blog/img/self/%E5%A4%B4%E5%83%8F.png',
+        avatar: 'https://i.loli.net/2021/09/01/qt4FWld7SkAVrQU.png',
         slogan: 'Life is a game, and the game is a life.',
         site: 'https://rsdbkhusky.github.io/',
     },
