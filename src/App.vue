@@ -1,5 +1,5 @@
 <template>
-    <main class="flex flex-col justify-between bg-white dark:bg-gray-900">
+    <main class="flex flex-col justify-between bg-gray-50 dark:bg-black">
         <div>
             <Header />
             <div class="container mx-auto px-4 max-w-screen-xl">
