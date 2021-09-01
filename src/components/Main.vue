@@ -129,7 +129,7 @@ const slogans = [
         grade: 2017,
         avatar: 'https://gravatar.loli.net/avatar/2caaf8193e57d2f3f9c657ca244df330?s=144',
         slogan: 'God helps those who help themselves.',
-        site: 'http://blog.gyx.me',
+        site: 'https://blog.gyx.me',
     },
     {
         name: '凉笙',
