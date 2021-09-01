@@ -131,6 +131,13 @@ const slogans = [
         slogan: 'God helps those who help themselves.',
         site: 'http://blog.gyx.me',
     },
+    {
+        name: '凉笙',
+        grade: 2020,
+        avatar: 'https://gravatar.loli.net/avatar/6bc0966973b7ac6d2ffbc017372b053f?s=144',
+        slogan: 'Inner peace.',
+        site: 'https://www.cnblogs.com/Liang-sheng/',
+    },
 ].map((slogan, index) => {
     slogan.color = colors[Object.keys(colors)[index % Object.keys(colors).length]];
     return slogan;
