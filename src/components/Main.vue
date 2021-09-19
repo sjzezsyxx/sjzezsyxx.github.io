@@ -122,6 +122,7 @@ const slogans = [
         grade: 2021,
         avatar: 'https://i.loli.net/2021/08/31/mRjfMirAvxtXE2Q.jpg',
         slogan: '纵使世界万般残酷，总有温暖值得守护。',
+        site: 'https://cloudyskyet.github.io',
     },
     {
         name: 'non_fried_chips',
