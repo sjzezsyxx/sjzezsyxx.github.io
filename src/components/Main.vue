@@ -101,7 +101,7 @@ const slogans = [
         grade: 2021,
         avatar: 'https://i.loli.net/2021/08/28/9SUsgA1u6Kj73r5.jpg',
         slogan: '我将会骄傲的说，这世界我来过。',
-        site: 'https://www.cnblogs.com/i209M/',
+        site: 'https://youwike.github.io',
     },
     {
         name: 'XYY1411',
