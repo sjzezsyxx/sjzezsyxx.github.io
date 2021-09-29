@@ -159,6 +159,13 @@ const slogans = [
         slogan: '年月把拥有变作失去，疲倦的双眼带着期望。',
         site: 'https://cgheavenhealer.github.io/',
     },
+    {
+        name: '南陽劉子驥',
+        grade: 2021,
+        avatar: 'https://i.loli.net/2021/09/20/sfakBvuxcDypFZW.png',
+        slogan: '逻辑搭建基础，变幻点燃世界。',
+        site: 'https://kaiserwilheim.github.io/',
+    },
 ].map((slogan, index) => {
     slogan.color = colors[Object.keys(colors)[index % Object.keys(colors).length]];
     return slogan;
