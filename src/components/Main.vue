@@ -166,6 +166,13 @@ const slogans = [
         slogan: '逻辑搭建基础，变幻点燃世界。',
         site: 'https://kaiserwilheim.github.io/',
     },
+    {
+        name: 'YCS_GG',
+        grade: 2020,
+        avatar: 'https://i.loli.net/2021/10/01/uX2kr4azIfJMpgH.png',
+        slogan: 'Asusetic eru quionours.',
+        site: 'https://ycsgg.github.io/',
+    },
 ].map((slogan, index) => {
     slogan.color = colors[Object.keys(colors)[index % Object.keys(colors).length]];
     return slogan;
