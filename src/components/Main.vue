@@ -3,21 +3,7 @@
         <div v-for="slogan in slogans" :key="slogan.name" class="p-2">
             <figure class="shadow-lg rounded-xl flex-none w-full">
                 <blockquote
-                    class="
-                        rounded-t-xl
-                        bg-white
-                        dark:bg-gray-800
-                        px-6
-                        py-8
-                        md:p-10
-                        text-lg
-                        md:text-xl
-                        leading-8
-                        md:leading-8
-                        font-semibold
-                        text-gray-900
-                        dark:text-gray-200
-                    "
+                    class="rounded-t-xl bg-white dark:bg-gray-800 px-6 py-8 md:p-10 text-lg md:text-xl leading-8 md:leading-8 font-semibold text-gray-900 dark:text-gray-200"
                 >
                     <svg
                         width="45"
@@ -69,6 +55,7 @@
 
 <script setup>
 import { gradients } from '../utils/gradients';
+import data from '../assets/sjzezsyxx.yml';
 
 const colors = {
     lightblue: [gradients.lightblue[0], 'text-cyan-100', 'bg-cyan-100', 'dark:text-cyan-300'],
@@ -81,99 +68,7 @@ const colors = {
     blue: [gradients.blue[0], 'text-sky-100', 'bg-sky-100', 'dark:text-sky-300'],
 };
 
-const slogans = [
-    {
-        name: '宝硕',
-        grade: 2021,
-        avatar: 'https://cdn.jsdelivr.net/npm/bsi@0.0.4/avatar/144x144.png',
-        slogan: '学习，就是发现自己越来越菜的过程。',
-        site: 'https://baoshuo.ren',
-    },
-    {
-        name: 'LawrenceSivan',
-        grade: 2020,
-        avatar: 'https://gravatar.loli.net/avatar/6b39805028574604c8349b18dcdb8a9f?d=mm&s=144',
-        slogan: 'I was so much older then, I′m younger than that now.',
-        site: 'https://lawrencesivan.github.io',
-    },
-    {
-        name: 'youwike',
-        grade: 2021,
-        avatar: 'https://i.loli.net/2021/08/28/9SUsgA1u6Kj73r5.jpg',
-        slogan: '我将会骄傲的说，这世界我来过。',
-        site: 'https://youwike.github.io',
-    },
-    {
-        name: 'XYY1411',
-        grade: 2020,
-        avatar: 'https://gravatar.loli.net/avatar/2df35c7d897d344d3889ffc8290bb1cd?d=mm&s=144',
-        slogan: '星空在前，路在脚下。',
-        site: 'https://xyy1411.github.io',
-    },
-    {
-        name: 'RenaMoe',
-        grade: 2020,
-        avatar: 'https://gravatar.loli.net/avatar/af4f417cc9c743bec7c0b06c94fe1f71?d=mm&s=144',
-        slogan: '以必将褪色的誓言，守护无法实现的愿望。',
-        site: 'https://renamoe.gitee.io',
-    },
-    {
-        name: 'CloudySky',
-        grade: 2021,
-        avatar: 'https://i.loli.net/2021/08/31/mRjfMirAvxtXE2Q.jpg',
-        slogan: '纵使世界万般残酷，总有温暖值得守护。',
-        site: 'https://cloudyskyet.github.io',
-    },
-    {
-        name: 'non_fried_chips',
-        grade: 2020,
-        avatar: 'https://gravatar.loli.net/avatar/3a0ef19aebf369316d445ff5334e9d6c?s=144',
-        slogan: '所有梦想终将怒放。',
-        site: 'https://nonfriedchips.github.io',
-    },
-    {
-        name: 'SGColin',
-        grade: 2017,
-        avatar: 'https://gravatar.loli.net/avatar/2caaf8193e57d2f3f9c657ca244df330?s=144',
-        slogan: 'God helps those who help themselves.',
-        site: 'https://blog.gyx.me',
-    },
-    {
-        name: '凉笙',
-        grade: 2020,
-        avatar: 'https://gravatar.loli.net/avatar/6bc0966973b7ac6d2ffbc017372b053f?s=144',
-        slogan: 'Inner peace.',
-        site: 'https://www.cnblogs.com/Liang-sheng/',
-    },
-    {
-        name: 'Rsdbkhusky',
-        grade: 2020,
-        avatar: 'https://i.loli.net/2021/09/01/qt4FWld7SkAVrQU.png',
-        slogan: 'Life is a game, and the game is a life.',
-        site: 'https://rsdbkhusky.github.io/',
-    },
-    {
-        name: 'CG__HeavenHealer',
-        grade: 2020,
-        avatar: 'https://i.loli.net/2021/09/01/3uvLtCZVdi9aY7y.png',
-        slogan: '年月把拥有变作失去，疲倦的双眼带着期望。',
-        site: 'https://cgheavenhealer.github.io/',
-    },
-    {
-        name: '南陽劉子驥',
-        grade: 2021,
-        avatar: 'https://i.loli.net/2021/09/20/sfakBvuxcDypFZW.png',
-        slogan: '逻辑搭建基础，变幻点燃世界。',
-        site: 'https://kaiserwilheim.github.io/',
-    },
-    {
-        name: 'YCS_GG',
-        grade: 2020,
-        avatar: 'https://i.loli.net/2021/10/01/uX2kr4azIfJMpgH.png',
-        slogan: 'Asusetic eru quionours.',
-        site: 'https://ycsgg.github.io/',
-    },
-].map((slogan, index) => {
+const slogans = data.map((slogan, index) => {
     slogan.color = colors[Object.keys(colors)[index % Object.keys(colors).length]];
     return slogan;
 });
